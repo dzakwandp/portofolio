@@ -1,8 +1,9 @@
 <template>
-  <div :class="{ dark: isDarkTheme, light: !isDarkTheme }" class="h-full px-6 pt-24">
+  <div
+    :class="{ dark: isDarkTheme, light: !isDarkTheme }"
+    class="h-full px-6 pt-24">
     <Navbar />
-    <NuxtPage>
-    </NuxtPage>
+    <NuxtPage> </NuxtPage>
   </div>
 </template>
 
@@ -14,6 +15,9 @@ export default {
   components: {
     Navbar,
   },
+  data() {
+    return {};
+  },
   computed: {
     isDarkTheme: () => useThemeStore().isDarkTheme,
   },
@@ -22,9 +26,9 @@ export default {
 
 <style>
 /* Your layout-specific styles here */
-.light{
-    background-color: #F6F6F6;
-    color: #1a202c;
+.light {
+  background-color: #f6f6f6;
+  color: #1a202c;
 }
 /* Dark theme styles */
 .dark {
