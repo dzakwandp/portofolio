@@ -2,8 +2,7 @@
   <div
     :class="{ dark: isDarkTheme, light: !isDarkTheme }"
     class="h-full px-6 pt-24">
-    <Navbar />
-    <NuxtPage> </NuxtPage>
+    <slot />
   </div>
 </template>
 

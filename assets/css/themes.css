@@ -1,9 +1,9 @@
 .dark {
-    --primary-bg: #1a202c;
-    --primary-text: #ffffff;
-  }
-  
-  .light {
-    --primary-bg: #F6F6F6;
-    --primary-text: #1a202c;
-  }
+  --primary-bg: #1a202c;
+  --primary-text: #ffffff;
+}
+
+.light {
+  --primary-bg: #f6f6f6;
+  --primary-text: #1a202c;
+}
