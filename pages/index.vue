@@ -191,9 +191,6 @@ export default {
       );
     },
   },
-  mounted() {
-    console.log(this.homeProject);
-  },
 };
 </script>
 <style></style>
