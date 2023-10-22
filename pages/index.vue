@@ -31,6 +31,7 @@
         </p>
       </div>
     </div>
+
     <!-- projects -->
     <div id="projects" class="py-10 md:mt-28">
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -115,6 +116,39 @@
             All Works
           </div>
         </NuxtLink>
+      </div>
+    </div>
+
+    <!-- about me -->
+    <div id="about-me" class="md:flex py-10">
+      <div class="flex-col mb-6 md:mb-0 md:w-5/12">
+        <div class="text-sm text-gray-700 dark:text-gray-400">A little bit</div>
+        <div class="font-roboto font-regular text-xl">About Me</div>
+      </div>
+
+      <div class="flex-col md:w-6/12">
+        <div class="font-roboto font-light text-3xl md:text-4xl mb-10">
+          Graduated from Teknik Komputer of Universitas Diponegoro. Passionated
+          with Frontend Development, Gaming too.
+        </div>
+        <div class="font-roboto font-light text-l">
+          Haven't too long in the Frontend Development, I begin my journey at
+          the Q4 of 2022 with my Bachelor's final project. Now I'm focused with
+          Frontend Development with Vue.js and Nuxt.js, still learning with
+          "learning by doing" method. I have done some paid project that you
+          could saw at my "Project" section. Spent almost my free time for
+          gaming like MOBA, Racing Sim, Strategies, etc. My motto "Experience
+          from Experiments" means you will never know if you haven't tried yet.
+          It's okay to fail, keep failing until no more fail comes to you.
+        </div>
+        <div class="flex justify-start w-full">
+          <NuxtLink to="/about">
+            <div
+              class="px-4 py-2 rounded-xl backdrop-blur text-black bg-white/30 dark:text-white text-sm dark:bg-black/30 mt-4 border border-black dark:border-white w-fit cursor-pointer lg:mt-8">
+              More about Me
+            </div>
+          </NuxtLink>
+        </div>
       </div>
     </div>
   </div>
