@@ -7,7 +7,13 @@
   </div>
 </template>
 <script>
-export default {};
+export default {
+  setup() {
+    useSeoMeta({
+      title: "Dzakwan Diego"
+    })
+  }
+};
 </script>
 <style>
 .page-enter-active,
