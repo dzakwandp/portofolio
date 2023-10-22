@@ -151,6 +151,29 @@
         </div>
       </div>
     </div>
+
+    <!-- email -->
+    <div id="email" class="md:flex py-10">
+      <div class="flex-col mb-6 md:mb-0 md:w-5/12">
+        <div class="text-sm text-gray-700 dark:text-gray-400">
+          Ready to start a project?
+        </div>
+        <div class="font-roboto font-regular text-xl">Let's collaborate!</div>
+      </div>
+
+      <div class="flex-col md:w-6/12">
+        <div class="font-roboto font-light text-l">Contact me at:</div>
+        <div class="flex justify-start w-full">
+          <a
+            href="mailto:diegodzakwan@gmail.com"
+            class="font-roboto text-xl group transition duration-300">
+            diegodzakwan@gmail.com
+            <span
+              class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-current"></span>
+          </a>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 <script>
@@ -173,4 +196,4 @@ export default {
   },
 };
 </script>
-<style lang=""></style>
+<style></style>
