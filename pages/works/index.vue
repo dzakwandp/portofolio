@@ -14,7 +14,7 @@
         </p>
         <p
           class="text-gray-700 dark:text-gray-400 text-base max-w-md text-right">
-          — "All life is an experiment. The more experiments you make the
+          — "All life is an experiment. The more experiments, you make the
           better."
         </p>
       </div>

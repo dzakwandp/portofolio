@@ -1,0 +1,34 @@
+[
+  {
+    "id": 0,
+    "comp": "Self Employed",
+    "time": "Now",
+    "pos": "Frontend Developer",
+    "stack": "VueJS, NuxtJS, Tailwind, Vuetify",
+    "desc": "I had the privilege of contributing to diverse projects spanning a wide range of client backgrounds. My portfolio includes crafting engaging company profiles, building dynamic online-shop sites, and designing captivating landing pages. Eager to learn the new things."
+  },
+  {
+    "id": 1,
+    "comp": "PT. Cahaya Fortuna Sejati",
+    "time": "Aug 17 - Nov 18",
+    "pos": "IT Support",
+    "stack": "",
+    "desc": "In this time, I had responsibility to install, manage, and maintaining all of the IT equipments like CCTV, LAN, WAN, Mail Server, and Personal Computer"
+  },
+  {
+    "id": 2,
+    "comp": "PT. Telkom Akses",
+    "time": "Feb 21 - Mar 21",
+    "pos": "Internship",
+    "stack": "",
+    "desc": "I have learned the technology of Optical Fiber connection, the FTTH technology, and Digitalisasi SPBU projects."
+  },
+  {
+    "id": 3,
+    "comp": "PSIS Semarang",
+    "time": "Sep 23 - Now",
+    "pos": "Technical & IT Engineer",
+    "stack": "",
+    "desc": "With the vendor, I'm doing some project in this company. Automatic gate for the Jatidiri Stadium, PSIS Apps for club information, ticketing service, and e-commerce, and LED Perimeter Board for displaying ads on the stadium's pitch side."
+  }
+]

@@ -90,7 +90,7 @@
     </div>
     <!-- button for responsive menu -->
     <div class="fixed flex md:hidden right-6 top-6">
-      <button @click="toggleTheme">
+      <button @click="toggleTheme" class="flex items-center">
         <!-- dark to light -->
         <transition name="mobiconslide">
           <div v-if="isDarkTheme">
@@ -279,12 +279,13 @@ export default {
 /* mobile dark switch animation */
 .mobiconslide-enter-active,
 .mobiconslide-leave-active {
-  transition: transform 0.5s;
+  transition: all 0.5s;
 }
 .mobiconslide-enter-from {
-  transform: translateX(-100%);
+  transform: translateX(100%);
 }
 .mobiconslide-leave-to {
   transform: translateX(-100%);
+  opacity: 0;
 }
 </style>
