@@ -12,7 +12,8 @@ export const useProjectStore = defineStore("project", {
         image: kpmain,
         year: "2023",
         client: "Kapital Printing",
-        link: "/works/kapital_printing"
+        link: "/works/kapital_printing",
+        stack: "Vue, Express, Tailwind"
       },
       {
         id: 1,
@@ -20,7 +21,8 @@ export const useProjectStore = defineStore("project", {
         image: siotmain,
         year: "2022",
         client: "Universitas Diponegoro",
-        link: "/works/simon_iot"
+        link: "/works/simon_iot",
+        stack: "Vue, Vuetify"
       },
       {
         id: 2,
@@ -28,7 +30,8 @@ export const useProjectStore = defineStore("project", {
         image: vislapmain,
         year: "2023",
         client: "Vislap",
-        link: "/works/vislap"
+        link: "/works/vislap",
+        stack: "Vue, Vuetify"
       },
       {
         id: 3,
@@ -36,6 +39,7 @@ export const useProjectStore = defineStore("project", {
         image: siotmain,
         year: "2022",
         client: "Universitas Diponegoro",
+        stack: "Vue, Express, Tailwind"
       },
     ],
   }),
