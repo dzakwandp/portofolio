@@ -2,6 +2,7 @@ import { defineStore } from "pinia";
 import kpmain from "@/assets/image/kapitalprint/kpmain.png";
 import siotmain from "@/assets/image/simoniot/siot_main.png";
 import vislapmain from "@/assets/image/vislap/vislap_main.png"
+import sicampingmain from "@/assets/image/sicamping/sicampingmain.png"
 
 export const useProjectStore = defineStore("project", {
   state: () => ({
@@ -35,11 +36,12 @@ export const useProjectStore = defineStore("project", {
       },
       {
         id: 3,
-        name: "Simon IoT Web",
-        image: siotmain,
-        year: "2022",
-        client: "Universitas Diponegoro",
-        stack: "Vue, Express, Tailwind"
+        name: "Sicamping",
+        image: sicampingmain,
+        year: "2023",
+        client: "RS PKU Muhammadiyah Gamping",
+        link: "/works/sicamping",
+        stack: "Vue, Vuetify"
       },
     ],
   }),

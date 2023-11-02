@@ -20,14 +20,14 @@
 
       <div class="my-6 font-roboto text-sm">
         <div class="font-medium">Company</div>
-        <div class="font-light">{{ project[0].client }}</div>
+        <div class="font-light">{{ project[1].client }}</div>
         <div class="md:mt-6 mt-2">
           <div class="font-medium">Year</div>
-          <div>{{ project[0].year }}</div>
+          <div>{{ project[1].year }}</div>
         </div>
         <div class="md:mt-6 mt-2">
           <div class="font-medium">Stack</div>
-          <div>{{ project[0].stack }}</div>
+          <div>{{ project[1].stack }}</div>
         </div>
       </div>
     </div>
@@ -36,24 +36,24 @@
     <div class="flex-col w-full md:w-5/12 items-start">
       <div
         class="w-full rounded-xl aspect-video relative overflow-hidden bg-cover bg-blue-100 text-black lg:aspect-video"
-        :style="{ backgroundImage: `url(${project[0].image})` }"></div>
+        :style="{ backgroundImage: `url(${project[1].image})` }"></div>
 
       <div class="font-roboto mt-10">
         <div class="text-3xl font-medium">Summary</div>
         <div class="text-base mt-4 leading-relaxed">
-          This website is contain some information of Kapital Printing like
-          company profile, product details, contact information, and blog post.
-          This website is built with MEVN (Mongo, Express, Vue, Node) stack.
+          This website was built as an element of the vanamei shrimp pond water
+          quality monitoring system. This website is my first job as a frontend
+          developer.
         </div>
       </div>
 
       <div class="font-roboto mt-10">
         <div class="text-3xl font-medium">Background</div>
         <div class="text-base mt-4 leading-relaxed">
-          Kapital Printing is a company operating in the printing and
-          accessories sector located in Sleman, DIY. The problem with this
-          company is that they don't have a presence in digital media so it is
-          still difficult to market their products in digital media.
+          Diponegoro University is collaborating with one of the pond farmer
+          groups in the Mororejo region to build a water quality monitoring
+          system for vanamei shrimp ponds against the background of the problem
+          of farmers having to monitor water quality manually.
         </div>
       </div>
 
@@ -62,37 +62,45 @@
         <div class="text-xl font-medium mt-4">Goals</div>
         <div class="text-base mt-4 leading-relaxed">
           The expected outcome of this project is a web-based application that
-          can be used to be the face of company in digital media. The application should be able
-          to:
+          can be used to manage and monitor the water quality of pond. The
+          application should be able to:
         </div>
         <ul class="mt-2 list-decimal list-inside">
-          <li>Manage the products listed in website</li>
-          <li>Manage the post in website's blog</li>
-          <li>Explain the company with the website</li>
+          <li>Manage the users</li>
+          <li>Manage the pond</li>
+          <li>Monitor the water quality</li>
         </ul>
         <div class="text-xl font-medium mt-4">System Spesification</div>
         <div class="text-base mt-4 leading-relaxed">
-          This website is built with Express for backend and Vue for frontend.
-          "admin" is the only role for this website, the role has responsibility
-          to create, delete, and edit all item/post that listed in the website.
-          This website consists of a main application, dashboard application and
-          backend application which are built separately, the three applications
-          are connected by an API controlled by the backend. This website also
-          support responsive design for mobile users.
+          The image below is the architecture of the shrimp pond water quality
+          monitoring system
+        </div>
+        <div
+          class="w-full rounded-xl bg-contain bg-blue-100 text-black aspect-[15/8]"
+          :style="{ backgroundImage: `url(${image[0]})` }"></div>
+        <div class="text-base mt-4 leading-relaxed">
+          The above diagram is a representation of the overall shrimp pond water
+          quality monitoring system that has been created. In short, this system
+          includes data collection by pH, TDS (density), Turbidity, DO (Oxygen),
+          and Temperature sensors, then this sensor data is collected by the
+          Arduino Uno microcontroller board and then sent to the Gateway
+          point-to-point using the LoRa Shield module. Once it reaches the
+          Gateway, the data is then sent to the database server using the MQTT
+          (Mosquitto) protocol. The database is also integrated with an API, so
+          the data displayed on the application and website can be accessed
+          through the API. This website works by utilizing the API produced by
+          the backend, both in presenting data in graphic form, as well as farm
+          and user management functions
         </div>
       </div>
 
       <div class="font-roboto mt-10">
         <div class="text-3xl font-medium">Results</div>
-        <div class="text-xl font-medium mt-4">Home Page</div>
-        <div
-          class="w-full rounded-xl bg-cover bg-blue-100 text-black aspect-[16/8]"
-          :style="{ backgroundImage: `url(${image[0]})` }"></div>
-        <div class="text-xl font-medium mt-4">Product Page</div>
+        <div class="text-xl font-medium mt-4">Pond List</div>
         <div
           class="w-full rounded-xl bg-cover bg-blue-100 text-black aspect-[16/8]"
           :style="{ backgroundImage: `url(${image[1]})` }"></div>
-        <div class="text-xl font-medium mt-4">Dashboard</div>
+        <div class="text-xl font-medium mt-4">Graph Data</div>
         <div
           class="w-full rounded-xl bg-cover bg-blue-100 text-black aspect-[16/8]"
           :style="{ backgroundImage: `url(${image[2]})` }"></div>
@@ -102,29 +110,31 @@
         <div class="text-3xl font-medium">Tech Stack</div>
         <ul class="mt-2 list-disc list-inside">
           <li>VueJS</li>
-          <li>Tailwind</li>
-          <li>Vuetify (for Dashboard)</li>
-          <li>Express</li>
-          <li>Mongo DB</li>
+          <li>Vuetify</li>
         </ul>
         <div class="text-base font-base mt-2">
           For the result, you could check it
-          <a href="https://kapitalprinting.vercel.app" target="_blank" class="font-semibold underline">here.</a>
+          <a
+            href="https://simon.ce.undip.ac.id"
+            target="_blank"
+            class="font-semibold underline"
+            >here.</a
+          >
         </div>
       </div>
     </div>
   </div>
 </template>
 <script>
-import home from "@/assets/image/kapitalprint/kphome.png";
-import product from "@/assets/image/kapitalprint/kpprod.png";
-import dashboard from "@/assets/image/kapitalprint/kpdash.png";
+import arch from "@/assets/image/simoniot/arch.png";
+import detail from "@/assets/image/simoniot/siot_detail.png";
+import graph from "@/assets/image/simoniot/siot_graph.png";
 import { useProjectStore } from "@/store/projectStore";
 export default {
   data() {
     return {
       project: useProjectStore().project,
-      image: [home, product, dashboard],
+      image: [arch, detail, graph],
     };
   },
 };

@@ -112,7 +112,7 @@
       <div class="flex justify-end w-full">
         <NuxtLink to="/works">
           <div
-            class="px-4 py-2 rounded-xl backdrop-blur text-black bg-white/30 dark:text-white text-sm dark:bg-black/30 mt-4 border border-black dark:border-white w-fit cursor-pointer lg:mt-8">
+            class="px-4 py-2 rounded-xl backdrop-blur text-black bg-white/30 hover:text-white hover:bg-black dark:text-white text-sm dark:bg-black/30 hover:dark:bg-white hover:dark:text-black border-black dark:border-white mt-4 border w-fit cursor-pointer transition-all duration-500 lg:mt-8">
             All Works
           </div>
         </NuxtLink>
@@ -144,7 +144,7 @@
         <div class="flex justify-start w-full">
           <NuxtLink to="/about">
             <div
-              class="px-4 py-2 rounded-xl backdrop-blur text-black bg-white/30 dark:text-white text-sm dark:bg-black/30 mt-4 border border-black dark:border-white w-fit cursor-pointer lg:mt-8">
+              class="px-4 py-2 rounded-xl backdrop-blur text-black bg-white/30 hover:text-white hover:bg-black dark:text-white text-sm dark:bg-black/30 hover:dark:bg-white hover:dark:text-black border-black dark:border-white border w-fit cursor-pointer transition-all duration-500 lg:mt-8">
               More about Me
             </div>
           </NuxtLink>

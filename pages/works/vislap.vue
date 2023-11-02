@@ -20,14 +20,14 @@
 
       <div class="my-6 font-roboto text-sm">
         <div class="font-medium">Company</div>
-        <div class="font-light">{{ project[0].client }}</div>
+        <div class="font-light">{{ project[2].client }}</div>
         <div class="md:mt-6 mt-2">
           <div class="font-medium">Year</div>
-          <div>{{ project[0].year }}</div>
+          <div>{{ project[2].year }}</div>
         </div>
         <div class="md:mt-6 mt-2">
           <div class="font-medium">Stack</div>
-          <div>{{ project[0].stack }}</div>
+          <div>{{ project[2].stack }}</div>
         </div>
       </div>
     </div>
@@ -36,24 +36,23 @@
     <div class="flex-col w-full md:w-5/12 items-start">
       <div
         class="w-full rounded-xl aspect-video relative overflow-hidden bg-cover bg-blue-100 text-black lg:aspect-video"
-        :style="{ backgroundImage: `url(${project[0].image})` }"></div>
+        :style="{ backgroundImage: `url(${project[2].image})` }"></div>
 
       <div class="font-roboto mt-10">
         <div class="text-3xl font-medium">Summary</div>
         <div class="text-base mt-4 leading-relaxed">
-          This website is contain some information of Kapital Printing like
-          company profile, product details, contact information, and blog post.
-          This website is built with MEVN (Mongo, Express, Vue, Node) stack.
+          This website contains company profiles and simple e-commerce for
+          purchasing spare parts by Vislap Laptop. This website is built with
+          Vue and Vuetify.
         </div>
       </div>
 
       <div class="font-roboto mt-10">
         <div class="text-3xl font-medium">Background</div>
         <div class="text-base mt-4 leading-relaxed">
-          Kapital Printing is a company operating in the printing and
-          accessories sector located in Sleman, DIY. The problem with this
-          company is that they don't have a presence in digital media so it is
-          still difficult to market their products in digital media.
+          Vislap is a company selling computer spare parts, they asked for a
+          website that contains a company profile as well as being able to sell
+          online (e commerce).
         </div>
       </div>
 
@@ -62,23 +61,25 @@
         <div class="text-xl font-medium mt-4">Goals</div>
         <div class="text-base mt-4 leading-relaxed">
           The expected outcome of this project is a web-based application that
-          can be used to be the face of company in digital media. The application should be able
-          to:
+          can be used to be the face of company in digital media and place for
+          customers to buy items via online. The application should be able to:
         </div>
         <ul class="mt-2 list-decimal list-inside">
           <li>Manage the products listed in website</li>
-          <li>Manage the post in website's blog</li>
+          <li>Manage selling reports</li>
+          <li>Manage technical service</li>
+          <li>Manage technical service reports</li>
           <li>Explain the company with the website</li>
         </ul>
         <div class="text-xl font-medium mt-4">System Spesification</div>
         <div class="text-base mt-4 leading-relaxed">
-          This website is built with Express for backend and Vue for frontend.
-          "admin" is the only role for this website, the role has responsibility
-          to create, delete, and edit all item/post that listed in the website.
-          This website consists of a main application, dashboard application and
-          backend application which are built separately, the three applications
-          are connected by an API controlled by the backend. This website also
-          support responsive design for mobile users.
+          This website was built using Vue and Vuetify for styling, all data is
+          obtained from the API endpoint and then processed to be presented to
+          the user. There is a product filter on the shopping page to make it
+          easier for users to choose items according to type. e-commerce
+          payments use Midway as a payment gateway. There is a dashboard
+          application that admins and technicians use to manage content, view
+          reports, and carry out user-related activities on the website.
         </div>
       </div>
 
@@ -92,39 +93,52 @@
         <div
           class="w-full rounded-xl bg-cover bg-blue-100 text-black aspect-[16/8]"
           :style="{ backgroundImage: `url(${image[1]})` }"></div>
-        <div class="text-xl font-medium mt-4">Dashboard</div>
+        <div class="text-xl font-medium mt-4">Service Page</div>
         <div
           class="w-full rounded-xl bg-cover bg-blue-100 text-black aspect-[16/8]"
           :style="{ backgroundImage: `url(${image[2]})` }"></div>
+        <div class="text-xl font-medium mt-4">Cart Page</div>
+        <div
+          class="w-full rounded-xl bg-cover bg-blue-100 text-black aspect-[16/8]"
+          :style="{ backgroundImage: `url(${image[3]})` }"></div>
+        <div class="text-xl font-medium mt-4">Dashboard Page</div>
+        <div
+          class="w-full rounded-xl bg-cover bg-blue-100 text-black aspect-[16/8]"
+          :style="{ backgroundImage: `url(${image[4]})` }"></div>
       </div>
 
       <div class="font-roboto mt-10">
         <div class="text-3xl font-medium">Tech Stack</div>
         <ul class="mt-2 list-disc list-inside">
           <li>VueJS</li>
-          <li>Tailwind</li>
-          <li>Vuetify (for Dashboard)</li>
-          <li>Express</li>
-          <li>Mongo DB</li>
+          <li>Vuetify</li>
         </ul>
         <div class="text-base font-base mt-2">
           For the result, you could check it
-          <a href="https://kapitalprinting.vercel.app" target="_blank" class="font-semibold underline">here.</a>
+          <a
+            href="https://vislap.vercel.app"
+            target="_blank"
+            class="font-semibold underline"
+            >here.</a
+          >
         </div>
       </div>
     </div>
   </div>
 </template>
 <script>
-import home from "@/assets/image/kapitalprint/kphome.png";
-import product from "@/assets/image/kapitalprint/kpprod.png";
-import dashboard from "@/assets/image/kapitalprint/kpdash.png";
+import home from "@/assets/image/vislap/vislap_home.png";
+import product from "@/assets/image/vislap/vislap_shop.png";
+import service from "@/assets/image/vislap/vislap_service.png";
+import cart from "@/assets/image/vislap/vislap_cart.png";
+import dashboard from "@/assets/image/vislap/vislap_dash.png";
+
 import { useProjectStore } from "@/store/projectStore";
 export default {
   data() {
     return {
       project: useProjectStore().project,
-      image: [home, product, dashboard],
+      image: [home, product, service, cart, dashboard],
     };
   },
 };
