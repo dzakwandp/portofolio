@@ -1,0 +1,1 @@
+import{_ as s,N as t,h as r,c as n,r as o,n as l,o as c}from"./entry.4b493ba2.js";const _={components:{Navbar:t},data(){return{}},computed:{isDarkTheme:()=>r().isDarkTheme}};function d(a,u,m,p,f,e){return c(),n("div",{class:l([{dark:e.isDarkTheme,light:!e.isDarkTheme},"h-full px-6 pt-24"])},[o(a.$slots,"default")],2)}const h=s(_,[["render",d]]);export{h as default};
