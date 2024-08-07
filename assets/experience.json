@@ -26,9 +26,17 @@
   {
     "id": 3,
     "comp": "PSIS Semarang",
-    "time": "Sep 23 - Now",
+    "time": "Sep 23 - Feb 24",
     "pos": "Technical & IT Engineer",
     "stack": "",
     "desc": "With the vendor, I'm doing some project in this company. Automatic gate for the Jatidiri Stadium, PSIS Apps for club information, ticketing service, and e-commerce, and LED Perimeter Board for displaying ads on the stadium's pitch side."
+  },
+  {
+    "id": 3,
+    "comp": "PT. Mahesa Jenar Semarang",
+    "time": "Feb 24 - Aug 24",
+    "pos": "Software Engineer",
+    "stack": "VueJS, Tailwind",
+    "desc": "Create, develop, and maintaining database for Semarang Citizen and database pool for scholarship submission for Semarang students."
   }
 ]

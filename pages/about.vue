@@ -80,43 +80,9 @@
           Just My little work experience.
         </div>
       </div>
-      <div class="md:w-6/12 font-roboto">
-        <!-- item with stack -->
-        <Accordion class="mb-2 w-full">
-          <template v-slot:title>
-            <div class="flex w-full text-start justify-between">
-              <div class="w-2/4 font-light text-xs md:text-base">
-                {{ expData[0].comp }}
-              </div>
-              <div class="w-1/4 font-light text-xs md:text-base">
-                {{ expData[0].time }}
-              </div>
-              <div class="w-1/4 font-light text-xs md:text-base">
-                {{ expData[0].pos }}
-              </div>
-            </div>
-          </template>
-          <template v-slot:content>
-            <p class="font-roboto pt-4 font-light">
-              {{ expData[0].desc }}
-            </p>
-            <p class="font-roboto pt-4 font-light text-emerald-600">
-              I'm actively seeking opportunities to collaborate within a team
-              environment, where I can contribute my expertise and continue to
-              learn and grow.
-            </p>
-            <div class="flex mt-4 items-center">
-              <div class="mr-4">Stacks:</div>
-              <div
-                class="rounded-lg dark:bg-[#f6f6f6] bg-[#1a202c] text-[#f6f6f6] dark:text-[#1a202c] p-2 text-sm">
-                {{ expData[0].stack }}
-              </div>
-            </div>
-          </template>
-        </Accordion>
-        <div class="bg-current h-px w-full mb-4"></div>
+      <div class="flex flex-col md:w-6/12 font-roboto">
         <!-- item loop -->
-        <div v-for="item in cutExpData" :key="item.id">
+        <div v-for="item in expData" :key="item.id">
           <Accordion class="mb-2 w-full">
             <template v-slot:title>
               <div class="flex w-full text-start justify-between">
@@ -132,13 +98,25 @@
               </div>
             </template>
             <template v-slot:content>
-              <p class="font-roboto pt-4 font-light">
+              <p class="font-roboto pt-4 font-light text-xs md:text-base">
                 {{ item.desc }}
               </p>
+              <div v-if="item.stack !== ''" class="flex mt-4 items-center">
+                <div class="mr-4">Stacks:</div>
+                <div
+                  class="rounded-lg dark:bg-[#f6f6f6] bg-[#1a202c] text-[#f6f6f6] dark:text-[#1a202c] p-2 text-sm">
+                  {{ item.stack }}
+                </div>
+              </div>
             </template>
           </Accordion>
           <div class="bg-current h-px w-full mb-4"></div>
         </div>
+        <p class="font-roboto pt-4 font-light text-emerald-600 text-xs md:text-base">
+          I'm actively seeking opportunities to collaborate within a team
+          environment, where I can contribute my expertise and continue to learn
+          and grow.
+        </p>
       </div>
     </div>
     <div class="hidden md:flex bg-current h-px w-full mb-4"></div>
@@ -183,9 +161,6 @@ export default {
     };
   },
   computed: {
-    cutExpData() {
-      return this.expData.filter((project) => project.id > 0);
-    },
     isDarkTheme: () => useThemeStore().darkTheme,
   },
 };
