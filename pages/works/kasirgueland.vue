@@ -20,14 +20,14 @@
 
       <div class="my-6 font-roboto text-sm">
         <div class="font-medium">Company</div>
-        <div class="font-light">{{ project[7].client }}</div>
+        <div class="font-light">{{ project.client }}</div>
         <div class="md:mt-6 mt-2">
           <div class="font-medium">Year</div>
-          <div>{{ project[7].year }}</div>
+          <div>{{ project.year }}</div>
         </div>
         <div class="md:mt-6 mt-2">
           <div class="font-medium">Stack</div>
-          <div>{{ project[7].stack }}</div>
+          <div>{{ project.stack }}</div>
         </div>
       </div>
     </div>
@@ -36,7 +36,7 @@
     <div class="flex-col w-full md:w-5/12 items-start">
       <div
         class="w-full rounded-xl aspect-video relative overflow-hidden bg-cover bg-blue-100 text-black lg:aspect-video"
-        :style="{ backgroundImage: `url(${project[7].image})` }"></div>
+        :style="{ backgroundImage: `url(${project.image})` }"></div>
 
       <div class="font-roboto mt-10">
         <div class="text-3xl font-medium">Summary</div>
@@ -112,7 +112,7 @@ import { useProjectStore } from "@/store/projectStore";
 export default {
   data() {
     return {
-      project: useProjectStore().project,
+      project: useProjectStore().project.find((item)=> item.link === "/works/kasirgueland"),
       image: [home],
     };
   },
