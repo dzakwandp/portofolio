@@ -83,7 +83,6 @@ export const useProjectStore = defineStore("project", {
         link: "/works/kasirgueland",
         stack: "Nuxt, Tailwind",
       },
-      
     ],
   }),
 });

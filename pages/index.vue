@@ -144,7 +144,7 @@
         <div class="flex justify-start w-full">
           <NuxtLink to="/about">
             <div
-              class="px-4 py-2 rounded-xl backdrop-blur text-black bg-white/30 hover:text-white hover:bg-black dark:text-white text-sm dark:bg-black/30 hover:dark:bg-white hover:dark:text-black border-black dark:border-white border w-fit cursor-pointer transition-all duration-500 lg:mt-8">
+              class="px-4 py-2 mt-4 rounded-xl backdrop-blur text-black bg-white/30 hover:text-white hover:bg-black dark:text-white text-sm dark:bg-black/30 hover:dark:bg-white hover:dark:text-black border-black dark:border-white border w-fit cursor-pointer transition-all duration-500 lg:mt-8">
               More about Me
             </div>
           </NuxtLink>
@@ -186,9 +186,11 @@ export default {
   },
   computed: {
     homeProject() {
-      return this.projects.filter(
-        (project) => project.id > 0 && 3 > project.id
-      );
+      return this.projects
+        .sort(function (a, b) {
+          return b.id - a.id;
+        })
+        .filter((project) => project.id > 0 && 3 > project.id);
     },
   },
 };

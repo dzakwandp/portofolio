@@ -7,12 +7,13 @@
   </div>
 </template>
 <script>
+
 export default {
   setup() {
     useSeoMeta({
-      title: "Dzakwan Diego"
-    })
-  }
+      title: "Dzakwan Diego",
+    });
+  },
 };
 </script>
 <style>
