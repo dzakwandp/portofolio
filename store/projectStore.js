@@ -7,6 +7,7 @@ import simpatisanmain from "@/assets/image/simpatisanys/simpatisanys_main.png";
 import beasiswamain from "@/assets/image/beasisways/beasisways_main.png";
 import kasirguelandmain from "@/assets/image/kasirgueland/kasirgueland_main.png";
 import kasirgueappmain from "@/assets/image/kasirgueapp/kasirgueapp_main.png";
+import pkuslemanmain from "@/assets/image/pkusleman/pkusleman_main.png";
 
 export const useProjectStore = defineStore("project", {
   state: () => ({
@@ -82,6 +83,15 @@ export const useProjectStore = defineStore("project", {
         client: "Kasirgue",
         link: "/works/kasirgueland",
         stack: "Nuxt, Tailwind",
+      },
+      {
+        id: 8,
+        name: "PKU Sleman",
+        image: pkuslemanmain,
+        year: "2025",
+        client: "RS PKU Muhammadiyah Sleman",
+        link: "/works/pkusleman",
+        stack: "Vue, Express, Tailwind, Inspira UI, shadcn UI",
       },
     ],
   }),

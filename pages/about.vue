@@ -9,9 +9,9 @@
         </div>
       </div>
       <div class="flex font-roboto text-xl md:text-3xl md:ml-2">
-        My name is Dzakwan. Frontend Developer born in Sleman based in Semarang,
-        Indonesia. I build functional, responsive, and accessible websites which
-        will be the face of your company.
+        My name is Dzakwan. Frontend Developer based in Sleman, Indonesia. I
+        build functional, responsive, and accessible websites which will be the
+        face of your company.
       </div>
     </div>
 
@@ -112,7 +112,8 @@
           </Accordion>
           <div class="bg-current h-px w-full mb-4"></div>
         </div>
-        <p class="font-roboto pt-4 font-light text-emerald-600 text-xs md:text-base">
+        <p
+          class="font-roboto pt-4 font-light text-emerald-600 text-xs md:text-base">
           I'm actively seeking opportunities to collaborate within a team
           environment, where I can contribute my expertise and continue to learn
           and grow.
@@ -147,7 +148,7 @@
 </template>
 <script>
 import Accordion from "@/components/accordion.vue";
-import ProfileImg from "@/assets/image/profile.png";
+import ProfileImg from "@/assets/image/profile.webp";
 
 import expData from "@/assets/experience.json";
 
