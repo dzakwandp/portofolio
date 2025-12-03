@@ -38,5 +38,13 @@
     "pos": "Software Engineer",
     "stack": "VueJS, Tailwind",
     "desc": "Create, develop, and maintaining database for Semarang Citizen and database pool for scholarship submission for Semarang students."
+  },
+  {
+    "id": 4,
+    "comp": "RS PKU Muhammadiyah Sleman",
+    "time": "May 24 - Now",
+    "pos": "EDP SIMRS Engineer",
+    "stack": "VueJS, Tailwind, PHP",
+    "desc": "Develop and maintaining SIMRS (Sistem Informasi Manajemen Rumah Sakit), install and maintaining IT Stuff in the hospital (Server, Database, Networking, Client PC)."
   }
 ]
