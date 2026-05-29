@@ -8,6 +8,7 @@ import beasiswamain from "@/assets/image/beasisways/beasisways_main.png";
 import kasirguelandmain from "@/assets/image/kasirgueland/kasirgueland_main.png";
 import kasirgueappmain from "@/assets/image/kasirgueapp/kasirgueapp_main.png";
 import pkuslemanmain from "@/assets/image/pkusleman/pkusleman_main.png";
+import yamahamain from "@/assets/image/yamahadeta/yamaha_main.png";
 
 export const useProjectStore = defineStore("project", {
   state: () => ({
@@ -92,6 +93,15 @@ export const useProjectStore = defineStore("project", {
         client: "RS PKU Muhammadiyah Sleman",
         link: "/works/pkusleman",
         stack: "Vue, Express, Tailwind, Inspira UI, shadcn UI",
+      },
+      {
+        id: 9,
+        name: "Yamaha Deta Denpasar",
+        image: yamahamain,
+        year: "2024",
+        client: "Yamaha Deta Denpasar",
+        link: "/works/yamahadetadenpasar",
+        stack: "Nuxt, Tailwind",
       },
     ],
   }),
